@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijah Collections BSB</title>
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h1><span class="name">Elijjah</span> Collections</h1>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#sec">New Arrivals</a></li>
+          
+          
+          <li><a href="about.html">About us</a></li>
+          
+          <li>
+            <div class="cart">
+              <a href="cart.html"><i class="fas fa-shopping-cart" style="color: black;"></i></a>
+              <span class="count">0</span>
+            </div>
+          </li>
+        </ul>
+        <!--Responsive button-->
+        <div class="menu_btn">
+          <i class="fa fa-bars"></i>
+        </div>
+        <button class="button" id="form-open">Login</button>
+        <button class="button">Logout</button>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="form-container">
+        <i class="uil uil-times form_close"></i>
+
+        <div class="form login-form">
+          <form action="">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember Me</label>
+              </span>
+              <a href="" class="forgot_password">Forgot Password?</a>
+            </div>
+            <button class="button">Login</button>
+            <div class="login_signup">
+              Already have an account? <a href="" id="signup"> Signup</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="form-container">
+        <i class="uil uil-times form_close"></i>
+
+        <div class="form login-form">
+          <form action="">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember Me</label>
+              </span>
+              <a href="" class="forgot_password">Forgot Password?</a>
+            </div>
+            <button class="button">Login</button>
+            <div class="login_signup">
+              Do not have an account? <a href="" id="signup"> Signup</a>
+            </div>
+          </form>
+        </div>
+        <div class="form signup-form">
+          <form action="">
+            <h2>Signup</h2>
+            <div class="input_box">
+              <input type="text" placeholder="Enter username" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="email" placeholder="Enter email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button class="button">Signup</button>
+            <div class="login_signup">
+              Already have an account? <a href="" id="login"> Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="main">
+        <h2>Welcome</h2>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque
+          praesentium in corrupti error sed deleniti, consequuntur facere
+          accusantium impedit expedita quisquam alias quos quaerat. Maiores,
+          distinctio nulla atque aperiam quo quidem tempora hic suscipit?
+          Voluptatibus possimus enim placeat porro, distinctio quidem asperiores
+          molestias minima, unde non veniam! Excepturi, officia? Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Praesentium odit saepe,
+          optio atque veritatis vero, voluptates neque doloremque sint, sunt
+          iste pariatur quos reprehenderit eaque assumenda inventore!
+          Repudiandae adipisci soluta accusantium laborum eaque, ipsam
+          reiciendis, illo facere, corrupti omnis reprehenderit exercitationem
+          atque ratione tempore voluptatibus ipsa? Nam laudantium quo excepturi.
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About Us</h2>
+          <div class="data">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+              culpa. Excepturi necessitatibus explicabo voluptate veniam omnis
+              ullam quasi ipsam, quaerat architecto nesciunt quos et quas sunt
+              dolorem? Quos, quaerat saepe in dolorem omnis iste pariatur! Eius
+              deserunt laboriosam eligendi ut.
+            </p>
+            <div class="social">
+              <a href=""><span class="fa-brands fa-facebook"></span></a>
+              <a href=""><span class="fa-brands fa-instagram"></span></a>
+              <a href=""><span class="fa-brands fa-twitter"></span></a>
+              <a href=""><span class="fa-brands fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="data">
+            <div class="place">
+              <span class="fa-solid fa-location-dot"></span>
+              <span class="text">Busembatia market</span>
+            </div>
+           <div class="phone">
+            <span class="fa-solid fa-phone"></span>
+            <span class="text">+256778840638</span>
+           </div>
+
+            <div class="email">
+              <span class="fa-regular fa-envelope"></span>
+              <span class="text">lelishaedgar10@gmail.com</span>
+            </div>
+            
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact Us</h2>
+          <div class="data">
+            <form action="">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message*</div>
+                <textarea name="" id="" cols="25" rows="3"></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="last">Designed by<a href="#"> Elisha Edgar</a> </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijjah Collections|Shopping Cart</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1><span class="name">Elijjah</span> Collections</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Register</a></li>
+        <li><a href="about.html">About us</a></li>
+        
+      </ul>
+      <!--Responsive button-->
+      <div class="menu_btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <div class="container-fluid mt-5">
+      <h2 class="mb-5 text-center">Shopping Cart</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="table-responsive">
+            <table id="myTable" class="table">
+              <thead>
+                <tr>
+                  <th>Products</th>
+                  <th>Name</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                  <th class="text-right"><span id="amount" class="amount">Amount</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product-image"><div class="image-prdct"><img src="pics/IMG-20230725-WA0078.jpg" alt=""></div></div>
+                  </td>
+                  <td>
+                    <p>Product one</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="text" min="0" name="qty" class="qty form-control" value="0">
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                    </div>
+                  </td>
+                  <td>
+                    <input type="text" value="100" class="price form-control" disabled>
+                  </td>
+                  <td align="right">Shs. <span id="amount" class="amount">10</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image"><div class="image-prdct"><img src="pics/IMG-20230725-WA0080.jpg" alt=""></div></div>
+                  </td>
+                  <td>
+                    <p>Product two</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="text" min="0" name="qty" class="qty form-control" value="0">
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                    </div>
+                  </td>
+                  <td>
+                    <input type="text" value="100" class="price form-control" disabled>
+                  </td>
+                  <td align="right">Shs. <span id="amount" class="amount">20</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image"><div class="image-prdct"><img src="pics/IMG-20230725-WA0079.jpg" alt=""></div></div>
+                  </td>
+                  <td>
+                    <p>Product three</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="text" min="0" name="qty" class="qty form-control" value="0">
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                    </div>
+                  </td>
+                  <td>
+                    <input type="text" value="100" class="price form-control" disabled>
+                  </td>
+                  <td align="right">Shs. <span id="amount" class="amount">30</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-image"><div class="image-prdct"><img src="pics/IMG-20230725-WA0082.jpg" alt=""></div></div>
+                  </td>
+                  <td>
+                    <p>Product four</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="text" min="0" name="qty" class="qty form-control" value="0">
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                    </div>
+                  </td>
+                  <td>
+                    <input type="text" value="100" class="price form-control" disabled>
+                  </td>
+                  <td align="right">Shs. <span id="amount" class="amount">0</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4"></td>
+                  <td align="right"><strong>TOTAL = Shs. <span id="total" class="total">1000</span></strong></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function(){
+      updateAmounts();
+      $('.qty, .price').on('keyup keypress blur change', function(e){
+        updateAmounts();
+      });
+    });
+    function updateAmounts(){
+      var sum=0.0;
+      $('#myTable>tbody>tr').each(function(){
+        var qty=$(this).find('qty').val();
+        var price=$(this).find('price').val();
+        var amount=(qty*price)
+        
+        sum+=amount;
+        $(this).find('.amount').text(''+amount);
+      });
+      $('.total').text(sum);
+    }
+
+    var incrementQty;
+    var decrementQty;
+    var plusBtn=$('.cart-qty-plus');
+    var minusBtn=$('.cart-qty-minus');
+    var incrementQty=plusBtn.click(function(){
+      var $n=$(this)
+      .parent('.button-container')
+      .find('.qty');
+      $n.val(Number($n.val())+1);
+      updateAmounts();
+    })
+    var decrementQty=minusBtn.click(function(){
+      var $n=$(this)
+      .parent('.button-container')
+      .find('.qty');
+      var qtyVal=Number($n.val());
+      if(qtyVal>0){
+        $n.val(qtyVal-1);
+      }
+      updateAmounts();
+    })
+  </script>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijjah Collections BSB</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a4ed8db191.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1><span class="name">Elijjah</span> Collections</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#sec">New Arrivals</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Register</a></li>
+        <li><a href="about.html">About us</a></li>
+        <button class="button" id="form-open">Login</button>
+        <button class="button">Logout</button>
+        <li>
+          <div class="cart">
+            <a href="cart.html"><i class="fas fa-shopping-cart" style="color: black;"></i></a>
+            <span class="count">0</span>
+          </div>
+        </li>
+      </ul>
+      <!--Responsive button-->
+      <div class="menu_btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <section class="content">
+      <h1>New Arrivals For Men And Women</h1>
+      <p>Get The best women, men and children fashion arrivals around town</p>
+      <button>Shop Now</button>
+    
+      
+    </section>
+
+    <h1 class="pheading">Our Latest Products</h1>
+    <div class="categories">
+      <a href="#shoes"><span id="womens">SHOES</span></a>
+      <a href="#bags"><span id="womens">BAGS</span></a>
+      <a href="#belts"><span id="womens">BELTS</span></a>
+    </div>
+
+    <section class="sec" id="sec">
+      
+      <div class="form-container">
+        <i class="uil uil-times form_close"></i>
+
+        <div class="form login-form">
+          <form action="">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember Me</label>
+              </span>
+              <a href="" class="forgot_password">Forgot Password?</a>
+            </div>
+            <button class="button">Login</button>
+            <div class="login_signup">
+              Already have an account? <a href="" id="signup"> Signup</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="form signup-form">
+        <form action="">
+          <h2>Signup</h2>
+          <div class="input_box">
+            <input type="text" placeholder="Enter username" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="email" placeholder="Enter email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button">Signup</button>
+          <div class="login_signup">
+            Already have an account? <a href="" id="login"> Login</a>
+          </div>
+        </form>
+      </div>
+      
+      <div class="products">
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (1).jpg" alt="" /></div>
+          <div class="desc">Women</div>
+          <div class="title">Lady Sandal</div>
+          <div class="box">
+            <div class="price">50$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/download (1).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Nike</div>
+          <div class="box">
+            <div class="price">100$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (3).jpg" alt="" /></div>
+          <div class="desc">Women</div>
+          <div class="title">Snicker</div>
+          <div class="box">
+            <div class="price">40$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (4).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Canvas</div>
+          <div class="box">
+            <div class="price">80$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (5).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Snickers</div>
+          <div class="box">
+            <div class="price">60$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images.jpg" alt="" /></div>
+          <div class="desc">Women</div>
+          <div class="title">High heels</div>
+          <div class="box">
+            <div class="price">100$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card">
+          <div class="img"><img src="pics/images (1).jpg" alt="" /></div>
+          <div class="desc">Women</div>
+          <div class="title">Lady Sandal</div>
+          <div class="box">
+            <div class="price">50$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+      </div>
+    </section>
+    <h1 class="pheading" id="shoes">Shoes Center</h1>
+    <section class="sec2">
+      <div class="shoes">
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0076.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0073.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0075.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+      </div>
+    </section>
+    <h1 class="pheading" id="bags">Bags Center</h1>
+    <section class="sec2">
+      <div class="shoes">
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0077.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0079.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0080.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img">
+            <img src="pics/IMG-20230725-WA0082.jpg" alt="" />
+          </div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+      </div>
+    </section>
+    <h1 class="pheading" id="belts">Belts Center</h1>
+    <section class="sec2">
+      <div class="shoes">
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+        <!--Card start-->
+        <div class="card_body">
+          <div class="img"><img src="pics/images (2).jpg" alt="" /></div>
+          <div class="desc">Men</div>
+          <div class="title">Mockasine</div>
+          <div class="box">
+            <div class="price">90$</div>
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+        <!--Card end-->
+      </div>
+    </section>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About Us</h2>
+          <div class="data">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+              culpa. Excepturi necessitatibus explicabo voluptate veniam omnis
+              ullam quasi ipsam, quaerat architecto nesciunt quos et quas sunt
+              dolorem? Quos, quaerat saepe in dolorem omnis iste pariatur! Eius
+              deserunt laboriosam eligendi ut.
+            </p>
+            <div class="social">
+              <a href=""><span class="fa-brands fa-facebook"></span></a>
+              <a href=""><span class="fa-brands fa-instagram"></span></a>
+              <a href=""><span class="fa-brands fa-twitter"></span></a>
+              <a href=""><span class="fa-brands fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="data">
+            <div class="place">
+              <span class="fa-solid fa-location-dot"></span>
+              <span class="text">Busembatia market</span>
+            </div>
+           <div class="phone">
+            <span class="fa-solid fa-phone"></span>
+            <span class="text">+256778840638</span>
+           </div>
+
+            <div class="email">
+              <span class="fa-regular fa-envelope"></span>
+              <span class="text">lelishaedgar10@gmail.com</span>
+            </div>
+            
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact Us</h2>
+          <div class="data">
+            <form action="">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message*</div>
+                <textarea name="" id="" cols="25" rows="3"></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="last">Designed by<a href="#"> Elisha Edgar</a> </p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
