@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijah Collections BSB</title>
+    <link rel="stylesheet" href="../../static/css/login.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      
+      <section class="home">
+        <div class="form-box">
+          <h2 id="title">Signup</h2>
+          <form action="">
+            <div class="input-field" id="nameField">
+              <i class="uil uil-envelope-alt email"></i>
+              <input type="text" placeholder="Name" required />
+            </div>
+            <div class="input_group">
+              <div class="input-field" id="contactField">
+                <i class="uil uil-envelope-alt email"></i>
+                <input type="text" placeholder="Contact" required />
+              </div>
+              <div class="input-field">
+                <i class="uil uil-envelope-alt email"></i>
+                <input type="email" placeholder="Enter email" required />
+              </div>
+              
+
+              <div class="input-field">
+                <i class="uil uil-lock password"></i>
+                <input type="password" placeholder="Enter password" required />
+
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input-field" id="passwordField">
+                <i class="uil uil-lock password"></i>
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <p id="alt">Already have an account? Please login</p>
+              <div class="btn-field">
+                <button type="button" id="signUpBtn">Signup</button>
+                <button type="button" class="disabled" id="loginBtn">
+                  Login
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      let signUpBtn = document.getElementById("signUpBtn");
+      let loginBtn = document.getElementById("loginBtn");
+      let nameField = document.getElementById("nameField");
+      let title = document.getElementById("title");
+      let passwordField=document.getElementById("passwordField");
+      let contactField=document.getElementById("contactField");
+      let alt=document.getElementById("alt");
+
+      loginBtn.onclick = function () {
+        nameField.style.maxHeight = "0";
+        passwordField.style.maxHeight="0";
+        contactField.style.maxHeight="0";
+        alt.innerHTML="Do not have an account? Please signup"
+        title.innerHTML="Login";
+        loginBtn.style.color="#fff";
+        signUpBtn.style.color="#555";
+        signUpBtn.classList.add("disabled");
+        loginBtn.classList.remove("disabled");
+        
+      };
+      signUpBtn.onclick = function () {
+        nameField.style.maxHeight = "65px";
+        passwordField.style.maxHeight = "65px";
+        contactField.style.maxHeight = "65px";
+        title.innerHTML="Signup";
+        signUpBtn.style.color="#fff";
+        loginBtn.style.color="#555";
+        signUpBtn.classList.remove("disabled");
+        loginBtn.classList.add("disabled");
+      };
+    </script>
+  </body>
+</html>
